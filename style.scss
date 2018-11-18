@@ -1,0 +1,267 @@
+/*
+Theme Name: ThemeStarterBS4
+Theme URI: 
+Author: Przemysław Mazur
+Author URI: http://www.przemyslawmazur.com
+Description:
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags:
+Text Domain: themestarter
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make som ething cool, have fun, and share what you've learned with others.
+*/
+
+$primary-blue: #396EA8;
+$secondary-blue: #1085E4;
+$primary-grey: #707070;
+
+
+
+i.fab,
+i.fas {
+    color: $primary-blue;
+    font-size: 50px;
+}
+
+.background--main {
+    background: url(img/main_page_bg_1.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: 92.9vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background--second {
+  background: url(img/main_second.jpeg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+@media (max-width: 797px) {
+    body {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+
+.navbar-brand {
+    color: $primary-blue !important;
+    font-weight: bold;
+}
+
+.nav-brand-separator {
+    color: $primary-blue;
+    padding-right: 5px;
+    font-weight: bold;
+}
+
+html,
+body {
+    height: 100vh;
+}
+
+.carousel,
+.item,
+.active {
+    height: 100vh;
+}
+
+.carousel-inner {
+    height: 100vh;
+}
+
+// img.bg {
+//     /* Set rules to fill background */
+//     min-height: 100%;
+//     min-width: 1024px;
+//     /* Set up proportionate scaling */
+//     width: 100%;
+//     height: auto;
+//     /* Set up positioning */
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+// }
+// @media screen and (max-width: 1024px) {
+//     /* Specific to this particular image */
+//     img.bg {
+//         left: 50%;
+//         margin-left: -512px;
+//         /* 50% */
+//     }
+// }
+.flex-fill {
+    flex: 1 1 auto;
+}
+
+.bg {
+    background-image: url("http://placehold.it/350x150");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+// .carousel-caption {
+//   // transform: translateY(-50%);
+//   bottom:0;
+//   top:40%;
+//   .caption--title--item1 {
+//       font-size: 60px;
+//       text-shadow: 0px 3px 6px grey;
+//   } 
+// }
+.caption--title--item {
+    font-size: 90px;
+    text-shadow: 0px 3px 6px grey;
+}
+
+.carousel-item:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: linear-gradient(to right, rgba(255, 209, 148, 0.4), rgba(112, 225, 245, 0.4));
+}
+
+.carousel-item {
+    height: 100vh;
+}
+
+.carousel-caption {
+    transform: translateY(-50%);
+    bottom: 0;
+    top: 50%;
+}
+
+// // i.fas, i.fab {
+// //   display: inline-block;
+// //   border-radius: 60px;
+// //   box-shadow: 0px 0px 2px #888;
+// //   padding: 0.5em 0.6em;
+// // }
+.social [class*="fab fa-"] {
+    background-color: $primary-blue;
+    border-radius: 30px;
+    color: #fff;
+    display: inline-block;
+    height: 45px;
+    line-height: 45px;
+    margin: auto 3px;
+    width: 45px;
+    font-size: 25px;
+    text-align: center;
+}
+
+.social [class*="fas fa-"] {
+    background-color: $primary-blue;
+    border-radius: 30px;
+    color: #fff;
+    display: inline-block;
+    height: 45px;
+    line-height: 45px;
+    margin: auto 3px;
+    width: 45px;
+    font-size: 25px;
+    text-align: center;
+}
+
+// .section-title {
+//     width: 100%;
+//     text-align: center;
+//     border-bottom: 6px solid $secondary-blue;
+//     line-height: 0.1em;
+//     margin: 10px 0 30px;
+
+//     span {
+//       background: #fff;
+//       padding: 0 60px;
+//       color: $primary-grey;
+//       font-size: 60px;
+//       font-weight: bold;
+//     } 
+// }
+
+
+// .section-title {
+//   overflow: hidden;
+//   text-align: center;
+// }
+
+// .section-title:before,
+// .section-title:after {
+//   background-color: #000;
+//   content: "";
+//   display: inline-block;
+//   height: 1px;
+//   position: relative;
+//   vertical-align: middle;
+//   width: 50%;
+// }
+
+// .section-title:before {
+//   right: 0.5em;
+//   margin-left: -50%;
+// }
+
+// .section-title:after {
+//   left: 0.5em;
+//   margin-right: -50%;
+// }
+
+// span:after,
+// span:before{
+//     content:"\00a0\00a0\00a0\00a0\00a0";
+//     text-decoration:line-through;
+// }
+
+.section-title {
+  display: flex;
+  flex-direction: row;
+  font-size: 50px;
+  color: $primary-grey;
+  margin-top: 120px;
+  margin-bottom: 80px;
+}
+.section-title:before, .section-title:after{
+  content: "";
+  flex: 1 1;
+  border-bottom: 6px solid $secondary-blue;
+  margin-top: 30px;
+  margin: 30px 10px 30px 10px;
+}
+
+/* remove default boostrap padding */
+.container-fluid {
+   padding-left: 0px !important;
+   padding-right: 0px !important;
+}
+
+.bottom-right {
+  // position: absolute;
+  // bottom: 8px;
+  left: 16px !important;
+  font-size: 90px;
+  text-shadow: 0px 3px 6px grey;
+  color: white;
+  
+  // color: red;
+}
